@@ -73,11 +73,17 @@ int main(int argc, char** argv) {
             for(int i=0; i<iNombreLigne;i++)
             {
                 if(fork()&&fork()){
-                    fork();
+                    wait(NULL);
+                    wait(NULL);
+                    printf("%d %d \n",getpid(),getpid());
+                    exit(0);
                 }
-                else{
+                
+                                else{
                     wait(NULL);
                 }
+                printf("Feuille");
+                exit(0);
             }
             break;
         }
