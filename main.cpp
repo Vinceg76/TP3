@@ -72,8 +72,8 @@ int main(int argc, char** argv) {
             cin >> iNombreLigne;
             for(int i=0; i<iNombreLigne;i++)
             {
-                if(!fork()){
-                    cout << "Fils " << i+1 << " " <<getpid() << " " << getppid() << endl;
+                if(fork()&&fork()){
+                    fork();
                 }
                 else{
                     wait(NULL);
