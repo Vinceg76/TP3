@@ -1,7 +1,4 @@
-/* 
- * File:   main.cpp
- * Author: radigue
- *
+ /*
  * Created on 14 septembre 2012, 09:42
  */
 
