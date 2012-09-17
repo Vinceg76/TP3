@@ -67,7 +67,7 @@ int main(int argc, char** argv) {
         //Cas arborescence
         case 3:
         {
-            int iNombreLigne = 0;
+            int iNombreLigne = 0, pid=0;
             cout << "Nombre de ligne ?" << endl;
             cin >> iNombreLigne;
             for(int i=0; i<iNombreLigne;i++)
